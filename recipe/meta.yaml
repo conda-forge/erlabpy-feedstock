@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: f10968e9c50256fb5d0f544a3553ef937243c1de512da98f5eac822df42a8160
+  sha256: 24616c36cf8e70c24c9b828cec2a29faec568d21b4d0229937f0104434b068e0
 
 build:
   noarch: python
