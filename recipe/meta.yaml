@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "2.5.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 09e445ac813fdfd3500c82e76cd427c3aecded0f4889257aba5ff6b29f6c4c62
+  sha256: 6e70b62dddcf7f94717c52de5f17b23133e58ec5049d335ec5e8b90e79b8fae0
 
 build:
   noarch: python
@@ -39,18 +39,18 @@ requirements:
     - varname >=0.13.0
     - xarray >=2024.02.0
   run_constrained:
-    - pyside2 >=5.15
-    - pyqt >=5.15
+    - bottleneck >=1.3.8
+    - dask >=2024.4.1
     - iminuit >=2.25.2
     - numbagg >=0.8.1
-    - bottleneck >=1.3.8
-
+    - pyqt >=5.15
+    - pyside2 >=5.15
 test:
   imports:
     - erlab
+    - erlab.analysis
     - erlab.io
     - erlab.plotting
-    - erlab.analysis
   commands:
     - pip check
   requires:
