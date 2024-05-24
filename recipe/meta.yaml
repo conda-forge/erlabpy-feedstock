@@ -37,7 +37,7 @@ requirements:
     - tqdm >=4.66.2
     - uncertainties >=3.1.4
     - varname >=0.13.0
-    - xarray >=2024.02.0
+    - xarray >=2024.05.0
   run_constrained:
     - bottleneck >=1.3.8
     - dask >=2024.4.1
