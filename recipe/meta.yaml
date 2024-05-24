@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "2.5.3" %}
+{% set version = "2.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: ab0cda6e8b2f74e2bbc19b54a741e4f40c3ebc60d83263962ef21dd49bfa495d
+  sha256: 4ab002a81705bbc8f5744ded2ff2ee5d4d21fe39eee8bd7d9a8b72fae9e1a9ca
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ requirements:
     - tqdm >=4.66.2
     - uncertainties >=3.1.4
     - varname >=0.13.0
-    - xarray >=2024.02.0
+    - xarray >=2024.05.0
   run_constrained:
     - bottleneck >=1.3.8
     - dask >=2024.4.1
