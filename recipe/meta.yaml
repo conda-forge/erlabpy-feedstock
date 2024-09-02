@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -33,11 +33,11 @@ requirements:
     - pyqtgraph >=0.13.1
     - qtawesome >=1.3.1
     - qtpy >=2.4.1
-    - scipy >=1.12.0
+    - scipy >=1.13.0
     - tqdm >=4.66.2
     - uncertainties >=3.1.4
     - varname >=0.13.0
-    - xarray >=2024.05.0
+    - xarray >=2024.07.0
   run_constrained:
     - bottleneck >=1.3.8
     - dask >=2024.4.1
