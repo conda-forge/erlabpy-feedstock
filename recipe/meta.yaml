@@ -10,9 +10,11 @@ source:
   sha256: 3a4fc74f920305321f2680f5d7feb989adfc31499888d7ff027f9a15cfa17541
 
 build:
+  entry_points:
+    - itool-manager = erlab.interactive.imagetool.manager:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
