@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 6448d63c059e44d954b17493dd517f0d66599f6bf3140a4383a8fd315170f554
+  sha256: 655a13619489329dd9131e1b40a6044970b9271da5a3be46a0256e7c607b49db
 
 build:
   entry_points:
     - itool-manager = erlab.interactive.imagetool.manager:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - h5netcdf >=1.2.0
-    - igor2 >=0.5.6
+    - igor2 >=0.5.9
     - joblib >=1.3.2
     - lmfit >=1.3.2
     - matplotlib-base >=3.8.0
