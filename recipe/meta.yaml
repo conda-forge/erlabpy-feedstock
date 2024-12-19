@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: ee26bf5fc8018b9d702a06a8b45cb94cc12c15ca06d764618db7baddda237da2
+  sha256: 178ed4619f13dcf05ce73e273e921aa109f50d874efe5b1895ce33d81f70bf50
 
 build:
   entry_points:
     - itool-manager = erlab.interactive.imagetool.manager:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
