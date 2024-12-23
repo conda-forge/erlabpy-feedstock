@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.2.3" %}
+{% set version = "3.3.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 178ed4619f13dcf05ce73e273e921aa109f50d874efe5b1895ce33d81f70bf50
+  sha256: 3e1beaec892591c68c69070d9690df28194ce95da2cebec9e4715796c5865062
 
 build:
   entry_points:
@@ -25,6 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - findiff >=0.12.0
     - h5netcdf >=1.2.0
     - igor2 >=0.5.9
     - joblib >=1.3.2
