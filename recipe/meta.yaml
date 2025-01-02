@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 3e1beaec892591c68c69070d9690df28194ce95da2cebec9e4715796c5865062
+  sha256: b525f0733f09104af0669c5f72f56d4d9f318f4540c8604d873c9d29f7e3f2e1
 
 build:
   entry_points:
@@ -34,6 +34,7 @@ requirements:
     - matplotlib-base >=3.8.0
     - numba >=0.59.0
     - numpy >=1.26.0
+    - pickleshare >=0.7.5
     - pyperclip >=1.8.2
     - pyqtgraph >=0.13.1
     - qtawesome >=1.3.1
