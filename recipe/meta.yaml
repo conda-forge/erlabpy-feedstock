@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.5.1" %}
+{% set version = "3.6.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: c192f3da2cca0830b490c077bb7141c63c1273d973185e3dd462bba03426e6d6
+  sha256: 63dbab95a39db6507ed695b5ab8836d3153a1b6fb8e56b79316a47279de26563
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - lazy-loader >=0.4
     - lmfit >=1.3.2
     - matplotlib-base >=3.8.0
-    - numba >=0.59.0
+    - numba >=0.61.0
     - numpy >=1.26.0
     - pickleshare >=0.7.5
     - pyperclip >=1.8.2
@@ -40,7 +40,7 @@ requirements:
     - qtawesome >=1.3.1
     - qtconsole-base >=5.6.0
     - qtpy >=2.4.1
-    - scipy >=1.13.0
+    - scipy >=1.15.0
     - tqdm >=4.66.2
     - varname >=0.13.0
     - xarray >=2024.10.0
@@ -55,6 +55,7 @@ requirements:
 test:
   imports:
     - erlab
+    - erlab.utils
     - erlab.analysis
     - erlab.io
     - erlab.plotting
