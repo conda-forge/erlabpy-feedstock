@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 2972c35cd2f5bc6d200b24301699efbad9501c42dd555d8975479481807e1bcb
+  sha256: e28492924d9ad0904bbb036a736eee547d1254702b4bfd935efc7fd7c02dac8a
 
 build:
   entry_points:
@@ -43,6 +43,7 @@ requirements:
     - tqdm >=4.66.2
     - varname >=0.13.0
     - xarray >=2024.10.0
+    - xarray-lmfit >=0.1.2
   run_constrained:
     - astropy >=5.1.1
     - nexusformat >=1.0.6
