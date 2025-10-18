@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.14.1" %}
+{% set version = "3.15.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: 3618936b39200022bc8d8ab69e960cf39e7f410e7842dcff3aca9073cc2f7ba0
+  sha256: d76a1b8ff71521dbe9a05247ed24f85cbf6c1b9810b6021bd66c6eb608be519b
 
 build:
   entry_points:
