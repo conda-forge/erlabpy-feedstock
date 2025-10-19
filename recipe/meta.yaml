@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - findiff >=0.12.0
-    - h5netcdf >=1.2.0
+    - h5netcdf >=1.7.1
     - igor2 >=0.5.12
     - igorwriter >=0.6.1
     - joblib >=1.3.2
@@ -35,6 +35,7 @@ requirements:
     - numba >=0.61.0
     - numexpr >=2.11.0
     - numpy >=1.26.0
+    - packaging >=24.0
     - pickleshare >=0.7.5
     - pyperclip >=1.8.2
     - pyqtgraph >=0.13.1
@@ -52,10 +53,9 @@ requirements:
     - python-libarchive-c >=5.2
     - nexusformat >=1.0.6
     - numbagg >=0.8.1
+    - xxhash >=3.5.0
     - iminuit >=2.25.2
     - dask >=2024.4.1
-    - pyqt >=5.15
-    - pyside2 >=5.15
 test:
   imports:
     - erlab
@@ -68,7 +68,7 @@ test:
     - pip check
   requires:
     - python {{ python_min }}
-    - pyqt >=5.15
+    - pyside6
     - pip
 
 about:
