@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.15.0" %}
+{% set version = "3.15.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: d76a1b8ff71521dbe9a05247ed24f85cbf6c1b9810b6021bd66c6eb608be519b
+  sha256: 3115212e67767ea2f4e920f8ce38cf1a78ae4f9d273b3328c73fd4d4fd23a2a6
 
 build:
   entry_points:
@@ -24,6 +24,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - dask >=2024.4.1
+    - distributed >=2024.4.1
     - findiff >=0.12.0
     - h5netcdf >=1.7.1
     - igor2 >=0.5.12
@@ -57,7 +59,6 @@ requirements:
     - numbagg >=0.8.1
     - xxhash >=3.5.0
     - iminuit >=2.25.2
-    - dask >=2024.4.1
 test:
   imports:
     - erlab
