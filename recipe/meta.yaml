@@ -56,6 +56,7 @@ requirements:
     - astropy >=5.1.1
     - python-libarchive-c >=5.2
     - nexusformat >=1.0.6
+    - zarr >=3.1.2
     - numbagg >=0.8.1
     - xxhash >=3.5.0
     - iminuit >=2.25.2
