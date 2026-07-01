@@ -40,6 +40,7 @@ requirements:
     - numpy >=1.26.0
     - packaging >=24.0
     - pickleshare >=0.7.5
+    - psutil >=7.2.2
     - pydantic >=2.11.7
     - pyperclip >=1.8.2
     - pyqtgraph >=0.13.1
@@ -57,9 +58,11 @@ requirements:
     - hdf5plugin >=6.0.0
   run_constrained:
     - hvplot >=0.11.0,!=0.12.0
+    - seaborn >=0.13.2
     - astropy >=5.1.1
     - nexusformat >=1.0.6
     - zarr >=3.1.2
+    - pillow >=10.0.0
     - numbagg >=0.8.1
     - iminuit >=2.25.2,!=2.31.2
     - numdifftools >=0.9.42
