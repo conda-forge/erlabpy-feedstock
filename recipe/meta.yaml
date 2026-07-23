@@ -56,7 +56,7 @@ requirements:
     - xarray >=2024.10.0
     - xarray-lmfit >=0.5.5
     - xraydb >=4.5.8
-    
+
   run_constrained:
     - astropy >=5.1.1
     - nexusformat >=1.0.6
