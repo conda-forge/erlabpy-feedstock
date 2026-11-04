@@ -1,5 +1,5 @@
 {% set name = "erlab" %}
-{% set version = "3.28.2" %}
+{% set version = "3.29.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/erlab-{{ version }}.tar.gz
-  sha256: d5af2c561131ba7739998a34c29eddc88d0e36d56e01ccb0eccc07f1d8b64892
+  sha256: 33971b1d938fbd8f0e679e131e001f14c00c70a4b752f6d1f76de24f292d18d7
 
 build:
   entry_points:
@@ -64,7 +64,9 @@ requirements:
     - zarr >=3.1.2
     - pillow >=10.0.0
     - iminuit >=2.25.2,!=2.31.2
+    - csaps >=1.1.0
     - numdifftools >=0.9.42
+    - onnxruntime >=1.24.1
     - numbagg >=0.8.1
     - hvplot >=0.11.0,!=0.12.0
     - seaborn-base >=0.13.2
